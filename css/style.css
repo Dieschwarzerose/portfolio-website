@@ -5,73 +5,69 @@
 	Secondary Color (Light Pink): #e2acc1;
 	Third Color (Gray): #808080;
 	*/
-@charset "utf-8";
 body {font-family: 'Work Sans', sans-serif;
 	color: #808080;
 	font-size: 15px;
-	font-weight: normal;
+	font-weight: 400;
 	line-height: normal;
 }
-
+.header{
+	display: block;
+}
 .navigation {
 	list-style-type: none;
 	padding: 0;
 	float: right;
-	font-family: 'Work Sans Light';
-	}
+		}
 .navigation > li {
   	display: inline-block;
  	margin-left: 10px;
 }
+
 h1 {
 	font-family: 'Work Sans', sans-serif,;
+	font-weight: 400;
 	font-size: 30px;
 	color: #00acc5;
 	text-align: center;
 }
 h2 {
 	font-size: 24px;
+	font-weight: 300;
 	color: #00acc5;
 	text-align: center;
 }
 
 h3 {
-	font-family: 'Work Sans Light';
+	font-weight: 'Work Sans Light';
 	font-size: 18px;
 }
 .logo{
 	margin: 10px;
 	padding: 30px;
 	}
-.download-cv {
-	background-color: #e2acc1;
+.button{
 	border: none;
-	color: white;
-	padding: 15px 32px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-	margin-left: auto;
-	margin-right: auto;
+    font-family: inherit;
+    background-color: #e2acc1;
+    color: white !important;
+    text-decoration:none;
+    padding: 10px;
+    transition-duration: 0.2s;
+    transition-property: opacity;
 }
-.download-cv-text {
-	text-decoration: none;	
-	color: white;
-}
-.download-cv-text:hover {
-	color: #808080;
-}
+.button:hover{/* Applies for links with the button class */
+    border: #808080;
+    border-width: 2px;
+    font-family: inherit;
+    opacity: 0.5;
+    color: white !important;
+    }
 .introduction, .about-text{
 	text-align: center;
 	padding: 20px;
 	margin-left: 100px;
 	margin-right: 100px;
-}
-.giulia-photo{
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
 }
 .contact-details {
 	text-align: center;
@@ -133,6 +129,7 @@ h1 {
     /* Reduce font-size of heading */
     font-size: 24px;
     text-align: center;
+    font-weight: 300;
 }
 .column-4 {
     /* Modify 4-column to 2-columns */
@@ -160,3 +157,96 @@ h3 {
 	font-size: 12px;
 }
 }
+
+@keyframes person1-move{
+    from {transform: translate(0,50px);}
+    to {transform: translate(-350px,48px);}
+}
+.person1{
+  animation-duration: 10s;
+  animation-name: person1-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+@keyframes person1-move-reverse {
+    from {transform: translate(446px,48px);}
+    to {transform: translate(100px, 48px);}
+}
+.person1-move {
+  animation: 14s person1-move-reverse infinite alternate linear;
+}
+
+@keyframes person2-move{
+    from {transform: translate(-460,0px);}
+    to {transform: translate(-250px,0px);}
+}
+.person2{
+  animation-duration: 18s;
+  animation-name: person2-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+@keyframes person2-move-reverse {
+    from {transform: translate(-150px,30px);}
+    to {transform: translate(0px, 0px);}
+}
+.person2-move {
+  animation: 14s person2-move-reverse infinite alternate linear;
+}
+@keyframes person3-move{
+    from {transform: translate(0,14px);}
+    to {transform: translate(450px,14px);}
+}
+.person3{
+  animation-duration: 12s;
+  animation-name: person3-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+@keyframes person3-move-reverse {
+    from {transform: translate(-150px,64px);}
+    to {transform: translate(0px, 64px);}
+}
+.person3-move {
+  animation: 14s person3-move-reverse infinite alternate linear;
+}
+@keyframes person4-move{
+    from {transform: translate(0,2px);}
+    to {transform: translate(500px,2px);}
+}
+.person4{
+  animation-duration: 16s;
+  animation-name: person4-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+@keyframes person4-move-reverse {
+    from {transform: translate(-150px,64px);}
+    to {transform: translate(0px, 64px);}
+}
+.person4-move {
+  animation: 14s person4-move-reverse infinite alternate linear;
+}
+@keyframes person5-move{
+    from {transform: translate(0,2px);}
+    to {transform: translate(500px,2px);}
+}
+.person5{
+  animation-duration: 16s;
+  animation-name: person5-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+@keyframes person5-move-reverse {
+    from {transform: translate(-150px,64px);}
+    to {transform: translate(0px, 64px);}
+}
+.person5-move {
+  animation: 14s person5-move-reverse infinite alternate linear;
+}
+
