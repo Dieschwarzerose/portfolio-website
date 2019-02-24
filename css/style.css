@@ -5,31 +5,60 @@
 	Secondary Color (Light Pink): #e2acc1;
 	Third Color (Gray): #808080;
 	*/
+*{box-sizing: border-box;
+}
 body {font-family: 'Work Sans', sans-serif;
 	color: #808080;
 	font-size: 15px;
 	font-weight: 400;
+	font-height: 1.4;
 	line-height: normal;
 }
-.header{
-	display: block;
+body::selection {
+    background:#00acc5;
+    color: #fff;
+}
+header{
+display:inline-block;
+width: 100%;
+}
+nav{
+	float: right;
+	padding-top: 30px;
 }
 .navigation {
 	list-style-type: none;
 	padding: 0;
-	float: right;
 		}
-.navigation > li {
+.navigation> li {
   	display: inline-block;
  	margin-left: 10px;
+	width: 45px;
+	height: 20px;
+	text-align: center;
+	vertical-align: middle;
+	padding: 5 10 10 5;
+}
+a{
+	color: #808080;
+	text-decoration: none;
+	font-weight: 300;
+	}
+a:hover{color: #00acc5;
+	font-weight: 700;
 }
 
+
 h1 {
-	font-family: 'Work Sans', sans-serif,;
 	font-weight: 400;
 	font-size: 30px;
 	color: #00acc5;
 	text-align: center;
+	padding-top: 30px;
+}
+h1::selection {
+    background:#00acc5;
+    color: #fff;
 }
 h2 {
 	font-size: 24px;
@@ -37,14 +66,28 @@ h2 {
 	color: #00acc5;
 	text-align: center;
 }
+h2::selection {
+    background:#e2acc1;
+    color: #808080;
+}
 
 h3 {
-	font-weight: 'Work Sans Light';
+	font-weight: 400;
 	font-size: 18px;
 }
+h3::selection {
+    background:#e2acc1;
+    color: #808080;
+}
+.untertitel{
+	font-weight: 300;
+	font-size: 24px;
+}
 .logo{
-	margin: 10px;
-	padding: 30px;
+	float: left;
+	margin: 0px;
+	padding: 15px;
+	height: 100px;
 	}
 .button{
 	border: none;
@@ -69,12 +112,16 @@ h3 {
 	margin-left: 100px;
 	margin-right: 100px;
 }
+::selection {
+    background:#e2acc1;
+    color: #808080;
+}
 .contact-details {
 	text-align: center;
+	line-height: 1.8;
 }
 .contact
 {
-	font-family: 'Work Sans', sans-serif;
 	color: #808080;
 	text-decoration: none
 }
@@ -82,25 +129,38 @@ h3 {
 	color:#e2acc1;
 }
 
+
+.about{
+	text-align: center;
+}
+
 		/* Layout styling */
 .wrapper {
 	width: 100%;
 	max-width: 1000px;
-	margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
+	margin: 0 auto;
+	padding: 0 15px 60px; /* No spacing to top and bottom and auto spacing to left and right */
+}
+.row{
+	content: ' ';
+	display: table;
+	clear: both;
+	padding-top: 30px;
 }
 .columns-container {
 	white-space: nowrap;
 }
 .column-4 {
-	width: 24%;
+	width: 23.5%;
 	display: inline-block;
 	border-style: solid;
 	border-width: 1px;
 	border-color: #808080;
 	font-size: 16px;
 	text-align: center;
-	margin-right: 1%
+	margin-right: 2%;
 	float: left;
+	margin-bottom: 25px;
 }
 .column-4 > img {
 	width: 100%;
@@ -112,18 +172,117 @@ h3 {
 .column-4:last-child {
 	margin-right: 0;
 }
+.row2{
+	content: ' ';
+	display: table;
+	clear: both;
+	padding-top: 30px;
+}
+.columns-container {
+	white-space: nowrap;
+}
+.column-p1 {
+	width: 66%;
+	display: inline-block;
+	font-size: 16px;
+	text-align: left;
+	margin-right: 1%;
+	float: left;
+	margin-bottom: 25px;
+}
+.column-p2 {
+	width: 32%;
+	height: auto;
+	display: inline-block;
+	background-color: #00acc5;
+	color: white;
+	font-size: 16px;
+	line-height: 2;
+	text-align: center;
+	margin-right: 1%;
+	float: left;
+}
+.project{
+	border-style: solid;
+	border-width: 1px;
+	border-color: #808080;
+}
+.project-list{
+		list-style-type: none;
+		padding-left: 0;
+}
 
-@media all and (max-width: 500px){
+footer{
+	background-color: #00acc5;
+	text-align: center;
+	color: white;
+	padding-top: 50px;
+	margin-top: 50px;
+}
+.footer-text{
+	color: white;
+}
+.footer-text::selection {
+    background:#fff;
+    color: #00acc5;
+}
+#menu-outer {
+	height: 84px;
+	background: url(images/bar-bg.jpg) repeat-x;
+}
+
+.table {
+	display: table;   /* Allow the centering to work */
+	margin: 0 auto;
+}
+
+ul#horizontal-list {
+	padding-top: 20px;
+	padding-left: 0;
+	}
+	ul#horizontal-list li {
+		display: inline;
+	}
+	.project{
+		width: 100%;
+		text-align: center;
+	}
+	.fa {
+	  padding: 20px;
+	  font-size: 30px;
+	  width: 50px;
+	  text-align: center;
+	  text-decoration: none;
+	  margin: 5px 2px;
+	}
+	.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-xing {
+  background: #007bb5;
+  color: white;
+}
+@media all and (max-width: 1000px){
 
 .wrapper {
-	width: 50%;
-	margin: 0 auto; 
-}/* No spacing to top and bottom and auto spacing to left and right */	
+	width: 100%;
+	padding: 0 15px;
+	margin: 0 auto;
+}/* No spacing to top and bottom and auto spacing to left and right */
 .logo {
     /* Make logo smaller by changing it's height */
-    height: 50px;
     display: flex;
-    justify-content: center;
 }
 h1 {
     /* Reduce font-size of heading */
@@ -133,11 +292,29 @@ h1 {
 }
 .column-4 {
     /* Modify 4-column to 2-columns */
-     width: 45%;
-    margin-right: 1%;
-}
+     width: 49%;
+  }
 .column-4:nth-child(2) {
 	margin-right: 0px;
+}
+.column-p1 {
+	width: 100%;
+	display: inline-block;
+	font-size: 16px;
+	text-align: left;
+	margin-right: 1%;
+	float: left;
+	margin-bottom: 25px;
+}
+.column-p2:nth-child(2) {
+	width: 100%;
+	display: inline-block;
+	background-color: #00acc5;
+	color: white;
+	font-size: 16px;
+	text-align: center;
+	margin-right: 0px;
+	float: left;
 }
 h2 {
 	font-size: 20px;
@@ -146,15 +323,20 @@ h2 {
 }
 
 h3 {
-	font-family: 'Work Sans Light';
-	font-size: 12px;
+	font-size: 20px;
 }
 .introduction, .about-text{
 	text-align: center;
 	padding: 5px;
 	margin-left: 0px;
 	margin-right: 0px;
-	font-size: 12px;
+	font-size: 20px;
+}
+.project{
+	width: 100%;
+}
+.giulia-photo{
+		width: 50%;
 }
 }
 
@@ -249,4 +431,3 @@ h3 {
 .person5-move {
   animation: 14s person5-move-reverse infinite alternate linear;
 }
-
