@@ -1,53 +1,65 @@
-	/*
-	Colors used
-
-	Primary Color (Blue): #00acc5;
-	Secondary Color (Light Pink): #e2acc1;
-	Third Color (Gray): #808080;
-	*/
-*{box-sizing: border-box;
+* {
+	box-sizing: border-box;
 }
-body {font-family: 'Work Sans', sans-serif;
+
+body {
+	font-family: 'Work Sans', sans-serif;
 	color: #808080;
 	font-size: 15px;
 	font-weight: 400;
 	font-height: 1.4;
 	line-height: normal;
 }
+
 body::selection {
-    background:#00acc5;
-    color: #fff;
+	background: #00acc5;
+	color: #fff;
 }
-header{
-display:inline-block;
-width: 100%;
+
+header {
+	display: inline-block;
+	margin-top: 0;
+	top: 0;
+	width: 100%;
+	background: #e2acc1;
+	-webkit-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
 }
-nav{
+
+nav {
 	float: right;
 	padding-top: 30px;
 }
+
 .navigation {
 	list-style-type: none;
 	padding: 0;
-		}
-.navigation> li {
-  	display: inline-block;
- 	margin-left: 10px;
+}
+
+.navigation>li {
+	display: inline-block;
+	margin-left: 10px;
 	width: 45px;
 	height: 20px;
 	text-align: center;
 	vertical-align: middle;
 	padding: 5 10 10 5;
 }
-a{
+a {
 	color: #808080;
 	text-decoration: none;
 	font-weight: 300;
-	}
-a:hover{color: #00acc5;
+}
+
+a:hover {
+	color: #00acc5;
 	font-weight: 700;
 }
 
+img {
+	width: 100%;
+}
 
 h1 {
 	font-weight: 400;
@@ -56,131 +68,178 @@ h1 {
 	text-align: center;
 	padding-top: 30px;
 }
+
 h1::selection {
-    background:#00acc5;
-    color: #fff;
+	background: #00acc5;
+	color: #fff;
 }
+
 h2 {
 	font-size: 24px;
 	font-weight: 300;
 	color: #00acc5;
 	text-align: center;
 }
+
 h2::selection {
-    background:#e2acc1;
-    color: #808080;
+	background: #e2acc1;
+	color: #808080;
 }
 
 h3 {
 	font-weight: 400;
 	font-size: 18px;
 }
+
 h3::selection {
-    background:#e2acc1;
-    color: #808080;
+	background: #e2acc1;
+	color: #808080;
 }
-.untertitel{
+#3drenders{
+	top: 150px;
+}
+#welcome span {
 	font-weight: 300;
 	font-size: 24px;
+	display: block;
+	margin: 20px 100px 0;
 }
-.logo{
+#about{
+	padding-top: 50px;
+}
+#about img {
+	width: 360px;
+}
+#about span {
+	font-weight: 300;
+	font-size: 24px;
+	display: block;
+	margin: 20px 0 0;
+}
+.logo {
 	float: left;
 	margin: 0px;
 	padding: 15px;
-	height: 100px;
-	}
-.button{
-	border: none;
-    font-family: inherit;
-    background-color: #e2acc1;
-    color: white !important;
-    text-decoration:none;
-    padding: 10px;
-    transition-duration: 0.2s;
-    transition-property: opacity;
+	max-width: 100px;
 }
-.button:hover{/* Applies for links with the button class */
-    border: #808080;
-    border-width: 2px;
-    font-family: inherit;
-    opacity: 0.5;
-    color: white !important;
-    }
-.introduction, .about-text{
+
+.button {
+	border: none;
+	font-family: inherit;
+	background-color: #e2acc1;
+	color: white !important;
+	text-decoration: none;
+	padding: 10px;
+	transition-duration: 0.2s;
+	transition-property: opacity;
+}
+
+.button:hover {
+	/* Applies for links with the button class */
+	border: #808080;
+	border-width: 2px;
+	font-family: inherit;
+	opacity: 0.5;
+	color: white !important;
+}
+
+.introduction, .about-text {
 	text-align: center;
 	padding: 20px;
 	margin-left: 100px;
 	margin-right: 100px;
 }
+
 ::selection {
-    background:#e2acc1;
-    color: #808080;
+	background: #e2acc1;
+	color: #808080;
 }
+
 .contact-details {
 	text-align: center;
 	line-height: 1.8;
 }
-.contact
-{
+
+.contact {
 	color: #808080;
 	text-decoration: none
 }
-.contact:hover{
-	color:#e2acc1;
+
+.contact:hover {
+	color: #e2acc1;
 }
 
-
-.about{
+.about {
 	text-align: center;
 }
 
-		/* Layout styling */
+.about img {
+	max-width: 360px;
+}
+
+/* Layout styling */
 .wrapper {
 	width: 100%;
 	max-width: 1000px;
 	margin: 0 auto;
-	padding: 0 15px 60px; /* No spacing to top and bottom and auto spacing to left and right */
+	padding: 0 15px 60px;
+	text-align: center;
+	/* No spacing to top and bottom and auto spacing to left and right */
 }
-.row{
+
+.row {
 	content: ' ';
 	display: table;
 	clear: both;
 	padding-top: 30px;
 }
+
 .columns-container {
 	white-space: nowrap;
 }
+
 .column-4 {
 	width: 23.5%;
 	display: inline-block;
-	border-style: solid;
-	border-width: 1px;
-	border-color: #808080;
-	font-size: 16px;
+		font-size: 16px;
 	text-align: center;
 	margin-right: 2%;
 	float: left;
 	margin-bottom: 25px;
+	vertical-align: top;
 }
-.column-4 > img {
+
+.column-4 img {
 	width: 100%;
 	display: inline-block;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #808080;
+	text-align: center;
 }
-.column-4:hover {
+
+.column-4 img:hover {
 	background: #dddddd;
+	opacity: 0.65;
 }
+
 .column-4:last-child {
 	margin-right: 0;
 }
-.row2{
+.project-details {
+ display: none;
+}
+.row2 {
 	content: ' ';
 	display: table;
 	clear: both;
 	padding-top: 30px;
 }
+
 .columns-container {
 	white-space: nowrap;
 }
+
 .column-p1 {
 	width: 66%;
 	display: inline-block;
@@ -190,6 +249,7 @@ h3::selection {
 	float: left;
 	margin-bottom: 25px;
 }
+
 .column-p2 {
 	width: 32%;
 	height: auto;
@@ -202,232 +262,322 @@ h3::selection {
 	margin-right: 1%;
 	float: left;
 }
-.project{
+
+.project {
 	border-style: solid;
 	border-width: 1px;
 	border-color: #808080;
 }
-.project-list{
-		list-style-type: none;
-		padding-left: 0;
+
+.project-list {
+	list-style-type: none;
+	padding-left: 0;
 }
 
-footer{
+footer {
 	background-color: #00acc5;
 	text-align: center;
 	color: white;
 	padding-top: 50px;
 	margin-top: 50px;
 }
-.footer-text{
+
+.footer-text {
 	color: white;
 }
+
 .footer-text::selection {
-    background:#fff;
-    color: #00acc5;
+	background: #fff;
+	color: #00acc5;
 }
+
 #menu-outer {
 	height: 84px;
 	background: url(images/bar-bg.jpg) repeat-x;
 }
 
 .table {
-	display: table;   /* Allow the centering to work */
+	display: table;
+	/* Allow the centering to work */
 	margin: 0 auto;
 }
 
 ul#horizontal-list {
 	padding-top: 20px;
 	padding-left: 0;
-	}
-	ul#horizontal-list li {
-		display: inline;
-	}
-	.project{
-		width: 100%;
-		text-align: center;
-	}
-	.fa {
-	  padding: 20px;
-	  font-size: 30px;
-	  width: 50px;
-	  text-align: center;
-	  text-decoration: none;
-	  margin: 5px 2px;
-	}
-	.fa-google {
-  background: #dd4b39;
-  color: white;
+}
+
+ul#horizontal-list li {
+	display: inline;
+}
+
+.project {
+	width: 100%;
+	text-align: center;
+}
+
+.fa {
+	padding: 20px;
+	font-size: 30px;
+	width: 50px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+}
+
+.fa-google {
+	background: #dd4b39;
+	color: white;
 }
 
 .fa-linkedin {
-  background: #007bb5;
-  color: white;
+	background: #007bb5;
+	color: white;
 }
+
 .fa-google {
-  background: #dd4b39;
-  color: white;
+	background: #dd4b39;
+	color: white;
 }
 
 .fa-xing {
-  background: #007bb5;
-  color: white;
-}
-@media all and (max-width: 1000px){
-
-.wrapper {
-	width: 100%;
-	padding: 0 15px;
-	margin: 0 auto;
-}/* No spacing to top and bottom and auto spacing to left and right */
-.logo {
-    /* Make logo smaller by changing it's height */
-    display: flex;
-}
-h1 {
-    /* Reduce font-size of heading */
-    font-size: 24px;
-    text-align: center;
-    font-weight: 300;
-}
-.column-4 {
-    /* Modify 4-column to 2-columns */
-     width: 49%;
-  }
-.column-4:nth-child(2) {
-	margin-right: 0px;
-}
-.column-p1 {
-	width: 100%;
-	display: inline-block;
-	font-size: 16px;
-	text-align: left;
-	margin-right: 1%;
-	float: left;
-	margin-bottom: 25px;
-}
-.column-p2:nth-child(2) {
-	width: 100%;
-	display: inline-block;
-	background-color: #00acc5;
+	background: #007bb5;
 	color: white;
-	font-size: 16px;
-	text-align: center;
-	margin-right: 0px;
-	float: left;
-}
-h2 {
-	font-size: 20px;
-	color: #00acc5;
-	text-align: center;
 }
 
-h3 {
-	font-size: 20px;
-}
-.introduction, .about-text{
-	text-align: center;
-	padding: 5px;
-	margin-left: 0px;
-	margin-right: 0px;
-	font-size: 20px;
-}
-.project{
-	width: 100%;
-}
-.giulia-photo{
+@media all and (max-width: 1000px) {
+	.wrapper {
+		width: 100%;
+		padding: 0 15px;
+		margin: 0 auto;
+	}
+
+	/* No spacing to top and bottom and auto spacing to left and right */
+	.logo {
+		/* Make logo smaller by changing it's height */
+		display: flex;
+	}
+
+	h1 {
+		/* Reduce font-size of heading */
+		font-size: 24px;
+		text-align: center;
+		font-weight: 300;
+	}
+
+	.column-4 {
+		/* Modify 4-column to 2-columns */
+		width: 49%;
+	}
+
+	.column-4:nth-child(2) {
+		margin-right: 0px;
+	}
+
+	.column-p1 {
+		width: 100%;
+		display: inline-block;
+		font-size: 16px;
+		text-align: left;
+		margin-right: 1%;
+		float: left;
+		margin-bottom: 25px;
+	}
+
+	.column-p2:nth-child(2) {
+		width: 100%;
+		display: inline-block;
+		background-color: #00acc5;
+		color: white;
+		font-size: 16px;
+		text-align: center;
+		margin-right: 0px;
+		float: left;
+	}
+
+	h2 {
+		font-size: 20px;
+		color: #00acc5;
+		text-align: center;
+	}
+
+	h3 {
+		font-size: 20px;
+	}
+
+	.introduction, .about-text {
+		text-align: center;
+		padding: 5px;
+		margin-left: 0px;
+		margin-right: 0px;
+		font-size: 20px;
+	}
+
+	.project {
+		width: 100%;
+	}
+
+	.giulia-photo {
 		width: 50%;
-}
+	}
 }
 
-@keyframes person1-move{
-    from {transform: translate(0,50px);}
-    to {transform: translate(-350px,48px);}
+@keyframes person1-move {
+	from {
+		transform: translate(0, 50px);
+	}
+
+	to {
+		transform: translate(-350px, 48px);
+	}
 }
-.person1{
-  animation-duration: 10s;
-  animation-name: person1-move;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
+
+.person1 {
+	animation-duration: 10s;
+	animation-name: person1-move;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: linear;
 }
+
 @keyframes person1-move-reverse {
-    from {transform: translate(446px,48px);}
-    to {transform: translate(100px, 48px);}
-}
-.person1-move {
-  animation: 14s person1-move-reverse infinite alternate linear;
+	from {
+		transform: translate(446px, 48px);
+	}
+
+	to {
+		transform: translate(100px, 48px);
+	}
 }
 
-@keyframes person2-move{
-    from {transform: translate(-460,0px);}
-    to {transform: translate(-250px,0px);}
+.person1-move {
+	animation: 14s person1-move-reverse infinite alternate linear;
 }
-.person2{
-  animation-duration: 18s;
-  animation-name: person2-move;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
+
+@keyframes person2-move {
+	from {
+		transform: translate(-460, 0px);
+	}
+
+	to {
+		transform: translate(-250px, 0px);
+	}
 }
+
+.person2 {
+	animation-duration: 18s;
+	animation-name: person2-move;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: linear;
+}
+
 @keyframes person2-move-reverse {
-    from {transform: translate(-150px,30px);}
-    to {transform: translate(0px, 0px);}
+	from {
+		transform: translate(-150px, 30px);
+	}
+
+	to {
+		transform: translate(0px, 0px);
+	}
 }
+
 .person2-move {
-  animation: 14s person2-move-reverse infinite alternate linear;
+	animation: 14s person2-move-reverse infinite alternate linear;
 }
-@keyframes person3-move{
-    from {transform: translate(0,14px);}
-    to {transform: translate(450px,14px);}
+
+@keyframes person3-move {
+	from {
+		transform: translate(0, 14px);
+	}
+
+	to {
+		transform: translate(450px, 14px);
+	}
 }
-.person3{
-  animation-duration: 12s;
-  animation-name: person3-move;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
+
+.person3 {
+	animation-duration: 12s;
+	animation-name: person3-move;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: linear;
 }
+
 @keyframes person3-move-reverse {
-    from {transform: translate(-150px,64px);}
-    to {transform: translate(0px, 64px);}
+	from {
+		transform: translate(-150px, 64px);
+	}
+
+	to {
+		transform: translate(0px, 64px);
+	}
 }
+
 .person3-move {
-  animation: 14s person3-move-reverse infinite alternate linear;
+	animation: 14s person3-move-reverse infinite alternate linear;
 }
-@keyframes person4-move{
-    from {transform: translate(0,2px);}
-    to {transform: translate(500px,2px);}
+
+@keyframes person4-move {
+	from {
+		transform: translate(0, 2px);
+	}
+
+	to {
+		transform: translate(500px, 2px);
+	}
 }
-.person4{
-  animation-duration: 16s;
-  animation-name: person4-move;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
+
+.person4 {
+	animation-duration: 16s;
+	animation-name: person4-move;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: linear;
 }
+
 @keyframes person4-move-reverse {
-    from {transform: translate(-150px,64px);}
-    to {transform: translate(0px, 64px);}
+	from {
+		transform: translate(-150px, 64px);
+	}
+
+	to {
+		transform: translate(0px, 64px);
+	}
 }
+
 .person4-move {
-  animation: 14s person4-move-reverse infinite alternate linear;
+	animation: 14s person4-move-reverse infinite alternate linear;
 }
-@keyframes person5-move{
-    from {transform: translate(0,2px);}
-    to {transform: translate(500px,2px);}
+
+@keyframes person5-move {
+	from {
+		transform: translate(0, 2px);
+	}
+
+	to {
+		transform: translate(500px, 2px);
+	}
 }
-.person5{
-  animation-duration: 16s;
-  animation-name: person5-move;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
+
+.person5 {
+	animation-duration: 16s;
+	animation-name: person5-move;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: linear;
 }
+
 @keyframes person5-move-reverse {
-    from {transform: translate(-150px,64px);}
-    to {transform: translate(0px, 64px);}
+	from {
+		transform: translate(-150px, 64px);
+	}
+
+	to {
+		transform: translate(0px, 64px);
+	}
 }
+
 .person5-move {
-  animation: 14s person5-move-reverse infinite alternate linear;
+	animation: 14s person5-move-reverse infinite alternate linear;
 }
