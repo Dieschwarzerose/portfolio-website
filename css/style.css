@@ -7,7 +7,6 @@ body {
 	color: #808080;
 	font-size: 15px;
 	font-weight: 400;
-	font-height: 1.4;
 	line-height: normal;
 }
 
@@ -37,6 +36,7 @@ nav {
 	padding: 0;
 }
 
+
 .navigation>li {
 	display: inline-block;
 	margin-left: 10px;
@@ -44,7 +44,7 @@ nav {
 	height: 20px;
 	text-align: center;
 	vertical-align: middle;
-	padding: 5 10 10 5;
+	padding: 5px 10px 10px 5px;
 }
 a {
 	color: #808080;
@@ -94,9 +94,6 @@ h3 {
 h3::selection {
 	background: #e2acc1;
 	color: #808080;
-}
-#3drenders{
-	top: 150px;
 }
 #welcome span {
 	font-weight: 300;
@@ -271,9 +268,17 @@ h3::selection {
 
 .project-list {
 	list-style-type: none;
+	height: 90px;
 	padding-left: 0;
 }
+.project-list> li {
+	display: inline-block;
+	margin-left: 10px;
+	text-align: center;
+	vertical-align: middle;
+	width: 45px;
 
+}
 footer {
 	background-color: #00acc5;
 	text-align: center;
@@ -346,12 +351,17 @@ ul#horizontal-list li {
 }
 
 @media all and (max-width: 1000px) {
+
+	nav {
+		float: right;
+		padding-right: 18px;
+		font-size: 15px;
+	}
 	.wrapper {
 		width: 100%;
 		padding: 0 15px;
 		margin: 0 auto;
 	}
-
 	/* No spacing to top and bottom and auto spacing to left and right */
 	.logo {
 		/* Make logo smaller by changing it's height */
@@ -417,9 +427,7 @@ ul#horizontal-list li {
 		width: 100%;
 	}
 
-	.giulia-photo {
-		width: 50%;
-	}
+
 }
 
 @keyframes person1-move {
@@ -456,7 +464,7 @@ ul#horizontal-list li {
 
 @keyframes person2-move {
 	from {
-		transform: translate(-460, 0px);
+		transform: translate(-460px, 0px);
 	}
 
 	to {
